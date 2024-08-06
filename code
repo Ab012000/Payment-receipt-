@@ -1,0 +1,15 @@
+Name = str(input("Please tell me your name : "))
+print("Thankyou" , Name,"for visiting us !!")
+def product(n):
+        i = 0
+        while i <= n : #while is used because we want to return it, the number of times the products are.
+                mrp = int(input("MRP for your selceted product is : "))
+                discount = int(input("percentage discount to be applied :"))
+                gst = mrp*(18/100) #18% gst
+                dis = mrp*(discount/100) #amount that is to be subtracted as discounts
+                final_price = mrp + gst - dis #add gst and remove dicounted values
+                print(final_price)
+                i += 1
+n = int(input("HOW MANY PRODUCTS YOU ARE WILLING TO BILL :"))
+product(n)
+print("Please pay the bill, gst is included and discounts have been made")
